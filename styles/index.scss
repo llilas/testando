@@ -171,7 +171,7 @@ h1{
     background-color: $color3;
     display: flex;
     flex-wrap: wrap;
-    height: 80vh;
+    height: fit-content;
     justify-content: center;
     align-items: center;
 }
@@ -209,6 +209,10 @@ h1{
 
 .horariotxt th{
     font-weight: 300;
+}
+
+.contato{
+    display: block;
 }
 
 

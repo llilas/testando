@@ -177,7 +177,8 @@ h1 {
   background-color: #d7d7cb;
   display: flex;
   flex-wrap: wrap;
-  height: 80vh;
+  height: -moz-fit-content;
+  height: fit-content;
   justify-content: center;
   align-items: center;
 }
@@ -216,6 +217,10 @@ h1 {
 
 .horariotxt th {
   font-weight: 300;
+}
+
+.contato {
+  display: block;
 }
 
 .fretegratis {
