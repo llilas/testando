@@ -23,6 +23,7 @@ body{
     background-color: $color2;
     z-index: 1;
     font-family: $font1;
+    overflow-x: hidden;
 }
 
 .nav {  
@@ -33,6 +34,7 @@ body{
     height: fit-content;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid $color3 ;
 }
 .navbar {  
     width: 100vw;
@@ -90,7 +92,7 @@ h1{
 }
 
 .mainhome{
-    padding: 2rem;
+    
 }
 
 .mainhome h1{
@@ -98,11 +100,13 @@ h1{
     text-align: center;
 }
 #produtos{
-    width: 100vw;
+    width: 80vw;
+    min-width: 150px;
     height: fit-content;
     margin: auto;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    color: $color4;
 }
 
 .produtos-grid {
@@ -114,19 +118,30 @@ h1{
     align-items: stretch; 
 }
 
-
 .produto {
     background-color: var(--primary-color);
-    color: #e0e0e0;
     padding: 1rem;
-    border-radius: 8px;
     display: flex; 
     flex-direction: column; 
     justify-content: space-between; 
-    height: 90%; 
+    height: fit-content; 
+    max-width: 400px;
+    border: 1px solid $color3;   
 }
 
+.produto img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
 
+.produtotitulo:hover {
+    margin: 0 1rem;
+    border-bottom: 1px solid #000000;
+}
+
+.produtodescricao{
+    font-weight: 200;
+}
 
 .fretegratis{
     background: $color1;

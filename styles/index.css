@@ -16,6 +16,7 @@ body {
   background-color: #ffffff;
   z-index: 1;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -27,6 +28,7 @@ body {
   height: fit-content;
   margin: 0;
   padding: 0;
+  border-bottom: 1px solid #d7d7cb;
 }
 
 .navbar {
@@ -92,22 +94,20 @@ h1 {
   width: fit-content;
 }
 
-.mainhome {
-  padding: 2rem;
-}
-
 .mainhome h1 {
   width: 100vw;
   text-align: center;
 }
 
 #produtos {
-  width: 100vw;
+  width: 80vw;
+  min-width: 150px;
   height: -moz-fit-content;
   height: fit-content;
   margin: auto;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  color: #000000;
 }
 
 .produtos-grid {
@@ -121,13 +121,28 @@ h1 {
 
 .produto {
   background-color: var(--primary-color);
-  color: #e0e0e0;
   padding: 1rem;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90%;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 400px;
+  border: 1px solid #d7d7cb;
+}
+
+.produto img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.produtotitulo:hover {
+  margin: 0 1rem;
+  border-bottom: 1px solid #000000;
+}
+
+.produtodescricao {
+  font-weight: 200;
 }
 
 .fretegratis {
