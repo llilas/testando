@@ -315,12 +315,12 @@ footer{
     nav .menu.active {
         display: block;
         overflow:visible;
+        text-align: center;
     }
     nav .menu li {
-        margin: 0 1rem;
         width: fit-content;
-        margin: auto;
         display: block;
+        margin: auto;
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
