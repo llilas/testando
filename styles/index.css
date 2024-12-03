@@ -283,6 +283,10 @@ h1 {
   margin: 30px 0 30px 0;
 }
 
+.maindetalhes {
+  height: 100vh;
+}
+
 .fretegratis {
   background: #605c4c;
   width: 100%;
