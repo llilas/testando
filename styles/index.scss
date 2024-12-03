@@ -82,7 +82,7 @@ nav .menu a {
 
 main{
     margin-top: 160px;
-    width: 100%;
+    width: 100vw;
 }
 
 h1{
@@ -250,19 +250,6 @@ h1{
     padding: 0 10px 0 10px;
 }
 
-.contato button{
-    z-index: 4;
-    padding: 10px;
-    background-color: $color1;
-    color: $color2;
-    position: absolute;
-    font-family: $font1;
-    font-size: 20px;
-    font-weight: 200;
-    border: 0;
-    margin: auto;
-}
-
 .maindetalhes p{
     max-width: 800px;
     margin: auto;
@@ -278,31 +265,57 @@ h1{
 }
 
 .mainhome{
-
+    margin-top: 150px;
 }
 
-.inicio{
-
+.conheca{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
 }
 
-.inicio .img{
-    
+.conheca .img{
+    min-width: 90vw;
+    height: 70vh;
+    background-image: url('../gatoprogramador.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 30px;
+    background-size: 100%;
 }
 
-.inicio .txt{
-    
+.conheca .txt {
+    max-width: 500px;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px;
+    position: absolute;
+    right: 20px; 
+    top: 50%;
+    float: right;
 }
 
-.inicio .txt h1{
-    
+.conheca .txt h1{
+    font-size: 1rem;
+    font-weight: 200;
 }
 
-.inicio .txt h2{
-    
+.conheca .txt h2{
+    font-size: 3rem;
+    font-weight: 300;
 }
 
-.inicio button{
-    
+.conheca button{
+    padding: 10px;
+    background-color: $color1;
+    color: $color2;
+    font-family: $font1;
+    font-size: 20px;
+    font-weight: 200;
+    border: 0;
+    margin: auto;
 }
 
 
@@ -433,6 +446,10 @@ footer p{
     
     .horario h1, .contato h1, .maindetalhes h1{
         font-size: 40px;
+    }
+    
+    .conheca .txt {
+        left: 0; 
     }
   }
   

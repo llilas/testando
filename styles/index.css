@@ -85,7 +85,7 @@ nav .menu a {
 
 main {
   margin-top: 160px;
-  width: 100%;
+  width: 100vw;
 }
 
 h1 {
@@ -95,7 +95,7 @@ h1 {
   width: fit-content;
 }
 
-.mainhome h1, .maindetalhes article, .maindetalhes h1 {
+.mainloja h1, .maindetalhes article, .maindetalhes h1 {
   width: 100vw;
   text-align: center;
 }
@@ -259,19 +259,6 @@ h1 {
   padding: 0 10px 0 10px;
 }
 
-.contato button {
-  z-index: 4;
-  padding: 10px;
-  background-color: #605c4c;
-  color: #ffffff;
-  position: absolute;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
-  border: 0;
-  margin: auto;
-}
-
 .maindetalhes p {
   max-width: 800px;
   margin: auto;
@@ -285,6 +272,63 @@ h1 {
 
 .maindetalhes {
   min-height: 100vh;
+}
+
+.mainhome {
+  margin-top: 150px;
+}
+
+.conheca {
+  width: 100vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+}
+
+.conheca .img {
+  min-width: 90vw;
+  height: 70vh;
+  background-image: url("../gatoprogramador.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 30px;
+  background-size: 100%;
+}
+
+.conheca .txt {
+  max-width: 500px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 7px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  float: right;
+}
+
+.conheca .txt h1 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.conheca .txt h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.conheca button {
+  padding: 10px;
+  background-color: #605c4c;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  border: 0;
+  margin: auto;
 }
 
 .fretegratis {
@@ -370,6 +414,9 @@ footer p {
   }
   .horario h1, .contato h1, .maindetalhes h1 {
     font-size: 40px;
+  }
+  .conheca .txt {
+    left: 0;
   }
 }
 /* Medium screens (e.g., tablets) */
