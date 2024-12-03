@@ -58,6 +58,8 @@ nav .menu {
 
 nav .menu li {
   margin: 0 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 nav .menu li.active {

@@ -60,6 +60,7 @@ nav .menu {
 }
 nav .menu li {
     margin: 0 1rem;
+    width: fit-content;
 }
 nav .menu li.active {
     border-bottom: 1px solid #000000;
