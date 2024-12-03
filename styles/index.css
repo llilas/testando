@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap");
+/* Default styles for all devices */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.nav {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #d7d7cb;
+}
+
+.navbar {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 200;
+  padding: 0.5rem 1rem;
+}
+
+.navbar img {
+  height: 80px;
+}
+
+nav .menu {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+nav .menu li {
+  margin: 0 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+nav .menu li.active {
+  border-bottom: 1px solid #000000;
+}
+
+nav .menu li:hover {
+  border-bottom: 1px solid #000000;
+}
+
+nav .menu a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  transition: 1s;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 38px;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 160px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 8em;
+  font-weight: 100;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.mainhome h1 {
+  width: 100vw;
+  text-align: center;
+}
+
+#produtos {
+  width: 80vw;
+  min-width: 150px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  color: #000000;
+}
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.produto {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 400px;
+  border: 1px solid #d7d7cb;
+}
+
+.produto img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.produtotitulo:hover {
+  margin: 0 1rem;
+  border-bottom: 1px solid #000000;
+}
+
+.produtotitulo {
+  padding: 0.5rem;
+}
+
+.produtodescricao {
+  font-weight: 200;
+  padding: 1rem;
+}
+
+.mainsobre h1 {
+  font-size: 5em;
+}
+
+.sobrenos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobrenos img {
+  width: 50%;
+  min-width: 300px;
+  padding: 10%;
+}
+
+.sobrenostxt {
+  width: 50%;
+  padding-right: 2rem;
+}
+
+.contato {
+  background-color: #d7d7cb;
+  display: flex;
+  flex-wrap: wrap;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato .img {
+  width: 50%;
+  height: 90vh;
+  min-width: 300px;
+  background-image: url("../gatoprogramador.jpg");
+  background-position: right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.contato h1 {
+  font-size: 3em;
+}
+
+.contatotxt {
+  width: 50%;
+  padding: 2rem;
+}
+
+.contatotxt table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-weight: 200;
+}
+
+.contatotxt th, .contatotxt td {
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+
+.contatotxt th {
+  font-weight: 300;
+}
+
+.fretegratis {
+  background: #605c4c;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.detalhesdosite {
+  display: flex;
+  gap: 2rem;
+  padding: 4rem 2rem 4rem 2rem;
+  color: #000000;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: space-evenly;
+  align-content: stretch;
+  width: 100%;
+  flex-wrap: wrap;
+  background: #d7d7cb;
+}
+
+.detalhesdosite p {
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vw;
+  min-width: 300px;
+}
+
+.detalhesdosite p img {
+  width: 50%;
+  min-width: 200px;
+}
+
+footer {
+  background: #605c4c;
+  width: 100%;
+  bottom: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #ffffff;
+}
+
+/* Small screens (e.g., smartphones) */
+@media (max-width: 320px) {
+  .detalhesdosite p {
+    min-width: 200px;
+    padding: 0;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 6em;
+    font-weight: 100;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .contato h1 {
+    font-size: 40px;
+  }
+}
+/* Medium screens (e.g., tablets) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  nav .menu {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    padding-top: 150px;
+    font-size: 20px;
+    z-index: 20;
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+  }
+  nav .menu.active {
+    display: block;
+    overflow: visible;
+    text-align: center;
+  }
+  nav .menu li {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .menu-toggle {
+    display: block;
+    z-index: 22;
+  }
+  .menu-toggle i {
+    transition: opacity 0.3s ease;
+  }
+  .sobrenos img {
+    width: 100%;
+    min-width: 0;
+    padding: 3%;
+  }
+  .sobrenostxt {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+@media (max-width: 1415px) {
+  .contato .img {
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    min-width: 0;
+    background-position: center center;
+  }
+  .contatotxt {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+/* Large screens (e.g., desktops) */
+@media (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=index.css.map */
