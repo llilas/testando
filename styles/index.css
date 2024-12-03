@@ -274,8 +274,7 @@ footer {
     text-align: center;
   }
   nav .menu li {
-    width: fit-content;
-    position: fixed;
+    width: 100%;
     display: block;
     margin: auto;
     margin-top: 2rem;
