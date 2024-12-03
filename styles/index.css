@@ -173,6 +173,52 @@ h1 {
   padding-right: 2rem;
 }
 
+.contato {
+  background-color: #d7d7cb;
+  display: flex;
+  flex-wrap: wrap;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato .img {
+  width: 50%;
+  height: 90vh;
+  min-width: 300px;
+  background-image: url("../gatoprogramador.jpg");
+  background-position: right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.contato h1 {
+  font-size: 3em;
+}
+
+.contatotxt {
+  width: 50%;
+  padding: 2rem;
+}
+
+.contatotxt table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-weight: 200;
+}
+
+.contatotxt th, .contatotxt td {
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+
+.contatotxt th {
+  font-weight: 300;
+}
+
 .fretegratis {
   background: #605c4c;
   width: 100%;
@@ -251,6 +297,9 @@ footer {
     width: -moz-fit-content;
     width: fit-content;
   }
+  .contato h1 {
+    font-size: 40px;
+  }
 }
 /* Medium screens (e.g., tablets) */
 @media (max-width: 768px) {
@@ -295,6 +344,19 @@ footer {
     padding: 3%;
   }
   .sobrenostxt {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+@media (max-width: 1415px) {
+  .contato .img {
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    min-width: 0;
+    background-position: center center;
+  }
+  .contatotxt {
     width: 100%;
     padding: 1rem;
   }
