@@ -48,7 +48,7 @@ body{
     padding: 0.5rem 1rem; 
 }
 .navbar img {
-    height: 70px;
+    height: 80px;
 }
 nav .menu {
     list-style: none;
@@ -86,19 +86,16 @@ main{
 }
 
 h1{
-    font-size: 10em;
+    font-size: 8em;
     font-weight: 100;
     width: fit-content;
-}
-
-.mainhome{
-    
 }
 
 .mainhome h1{
     width: 100vw;
     text-align: center;
 }
+
 #produtos{
     width: 80vw;
     min-width: 150px;
@@ -120,10 +117,10 @@ h1{
 
 .produto {
     background-color: var(--primary-color);
-    padding: 1rem;
     display: flex; 
     flex-direction: column; 
     justify-content: space-between; 
+    margin: auto;
     height: fit-content; 
     max-width: 400px;
     border: 1px solid $color3;   
@@ -139,9 +136,68 @@ h1{
     border-bottom: 1px solid #000000;
 }
 
+.produtotitulo {
+    padding: 0.5rem;
+}
+
 .produtodescricao{
     font-weight: 200;
+    padding: 1rem;
 }
+
+.mainsobre h1{
+    font-size: 5em;
+}
+
+.sobrenos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobrenos img{
+    width: 50%;
+    min-width: 300px;
+    padding: 10%;
+}
+
+.sobrenostxt{
+    width: 50%;
+    padding-right: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .fretegratis{
     background: $color1;
@@ -189,7 +245,6 @@ footer{
     background: $color1;
     width: 100%;
     bottom: 0;
-    position: fixed;
     height: fit-content;
     display: flex;
     text-align: center;
@@ -232,6 +287,11 @@ footer{
     body {
       font-size: 14px;
     }
+    h1{
+        font-size: 6em;
+        font-weight: 100;
+        width: fit-content;
+    }
   }
   
   /* Medium screens (e.g., tablets) */
@@ -270,6 +330,16 @@ footer{
     }
     .menu-toggle i {
         transition: opacity 0.3s ease;
+    }
+    .sobrenos img{
+        width: 100%;
+        min-width: 0;
+        padding: 3%;
+    }
+    
+    .sobrenostxt{
+        width: 100%;
+        padding: 1rem;
     }
   }
   

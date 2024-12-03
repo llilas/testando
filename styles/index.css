@@ -44,7 +44,7 @@ body {
 }
 
 .navbar img {
-  height: 70px;
+  height: 80px;
 }
 
 nav .menu {
@@ -88,7 +88,7 @@ main {
 }
 
 h1 {
-  font-size: 10em;
+  font-size: 8em;
   font-weight: 100;
   width: -moz-fit-content;
   width: fit-content;
@@ -121,10 +121,10 @@ h1 {
 
 .produto {
   background-color: var(--primary-color);
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: auto;
   height: -moz-fit-content;
   height: fit-content;
   max-width: 400px;
@@ -141,8 +141,35 @@ h1 {
   border-bottom: 1px solid #000000;
 }
 
+.produtotitulo {
+  padding: 0.5rem;
+}
+
 .produtodescricao {
   font-weight: 200;
+  padding: 1rem;
+}
+
+.mainsobre h1 {
+  font-size: 5em;
+}
+
+.sobrenos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobrenos img {
+  width: 50%;
+  min-width: 300px;
+  padding: 10%;
+}
+
+.sobrenostxt {
+  width: 50%;
+  padding-right: 2rem;
 }
 
 .fretegratis {
@@ -193,7 +220,6 @@ footer {
   background: #605c4c;
   width: 100%;
   bottom: 0;
-  position: fixed;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -217,6 +243,12 @@ footer {
 @media (max-width: 600px) {
   body {
     font-size: 14px;
+  }
+  h1 {
+    font-size: 6em;
+    font-weight: 100;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 /* Medium screens (e.g., tablets) */
@@ -255,6 +287,15 @@ footer {
   }
   .menu-toggle i {
     transition: opacity 0.3s ease;
+  }
+  .sobrenos img {
+    width: 100%;
+    min-width: 0;
+    padding: 3%;
+  }
+  .sobrenostxt {
+    width: 100%;
+    padding: 1rem;
   }
 }
 /* Large screens (e.g., desktops) */
