@@ -167,47 +167,47 @@ h1{
     padding-right: 2rem;
 }
 
-.contato{
+.horario{
     background-color: $color3;
     display: flex;
     flex-wrap: wrap;
-    height: fit-content;
+    height: 80vh;
     justify-content: center;
     align-items: center;
 }
 
-.contato .img{
+.horario .img{
     width: 50%;
-    height: 90vh;
+    height: 80vh;
     min-width: 300px;
     background-image: url('../gatoprogramador.jpg');
     background-position: right;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 50% 100%;
 }
 
-.contato h1{
+.horario h1{
     font-size: 3em;
 }
 
-.contatotxt{
+.horariotxt{
     width: 50%;
     padding: 2rem;
 }
 
-.contatotxt table {
+.horariotxt table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
     font-weight: 200;
 }
-.contatotxt th, .contatotxt td {
+.horariotxt th, .horariotxt td {
     border: 1px solid #ffffff;
     padding: 10px;
 }
 
-.contatotxt th{
+.horariotxt th{
     font-weight: 300;
 }
 
@@ -337,7 +337,7 @@ footer{
         width: fit-content;
     }
     
-    .contato h1{
+    .horario h1{
         font-size: 40px;
     }
   }
@@ -393,7 +393,7 @@ footer{
   }
   
   @media (max-width: 1415px) {
-    .contato .img{
+    .horario .img{
         width: 100%;
         height: 90vh;
         background-size: cover;
@@ -401,7 +401,7 @@ footer{
         background-position: center center;
     }
 
-    .contatotxt{
+    .horariotxt{
         width: 100%;
         padding: 1rem;
     }
